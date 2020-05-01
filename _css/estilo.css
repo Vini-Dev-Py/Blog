@@ -1,8 +1,43 @@
 @charset "UTF-8";
 
+/** ICONS **/
+@font-face {
+	font-family: 'NomeDaFonte';
+	src: url('NomeDaFonte.eot');
+	src: url('NomeDaFonte?#iefix') format('embedded-opentype'),
+	  url('NomeDaFonte.svg#Locaweb-Icons') format('svg'),
+	  url('NomeDaFonte.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  [class^="ico-"]:before {
+	content: " ";
+	width:10px; height:10px;
+	display:inline-block;
+	vertical-align:middle;
+	font-family: icomoon;
+  }
+  
+/* Cola */
+.icon-home:before { content: '\2302'; } /* '⌂' */
+.icon-export:before { content: '\e715'; } /* '' */
+.icon-folder-open:before { content: '📂'; } /* '\1f4c2' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-link:before { content: '🔗'; } /* '\1f517' */
+/* fim da cola */
+
+[class^="ico-"]:before {
+	content: " ";
+	width:10px; height:10px;
+	display:inline-block;
+	vertical-align:middle;
+  }
+
+
 body {
 	font-family: Arial, sans-serif;
-	background-color: white;
+	background-color: rgb(207, 202, 202);
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -31,10 +66,31 @@ div#Lista nav#menu li {
 	padding: 10px;
 	margin: 8px;
 	transition: background-color 1s;
+	font-size: 14pt;
 }
 
-div#Lista nav#menu li:hover {
-    color: rgb(124, 116, 116);
+div#Lista nav#menu li a {
+	color: white;
+	text-decoration: none;
+}
+
+/*Inicio dos testes*/
+
+.div#Lista nav#menu li.home::before
+{font-family: 'icomoon'; color: #fff; font-size: 60px; text-align: center; display: block;}
+
+div#Lista nav#menu li.home::before {
+	content: "\1f4c2";
+}
+
+div#Lista nav#menu li.home, div#Lista nav#menu li.planos, div#Lista nav#menu li.galeria,div#Lista nav#menu li.certificados,div#Lista nav#menu li.suporte
+{cursor:pointer; border-right:1px solid #fff;}
+
+
+/*Fim dos testes*/
+
+div#Lista nav#menu li a:hover {
+	color: goldenrod;
 }
 
 div#start nav#nome h1 {
@@ -51,23 +107,26 @@ div#start nav#explicação hgroup#top {
 	position: absolute;
 	top: 180px;
     left: 160px;
-    width: 372px;
-	height: 270px;
+    width: 395px;
+	height: 290px;
 	background-color: black;
-	color: white;
-	font-size: 16pt;
-	padding-left: 8px;
+	color: ivory;
+	font-size: 19pt;
+	padding: 25px;
+	box-shadow: 0px 0px 30px gold;
 }
 
 div#start nav#explicação hgroup#sub {
 	display: block;
 	position: absolute;
-    font-size: 20pt;
-	color: black;
-	top: 420px;
-	left: 800px;
-	width: 372px;
-	height: 180px;
+	color: white;
+	top: 520px;
+	left: 792px;
+	width: 378px;
+	height: 110px;
+	text-align: center;
+	font-size: 15pt;
+	text-indent: 0;
 }
 
 div#start nav#explicação hgroup#sub p {
@@ -77,20 +136,74 @@ div#start nav#explicação hgroup#sub p {
 div#start nav#explicação img#tecnologias {
 	position: absolute;
 	left: 770px;
-	top: 140px;
+	top: 170px;
+	border: thin gold solid;
+  	margin: 0.5em;
+	padding: 1.5em;
+	padding-bottom: 100px;
+	box-shadow: 0px 0px 30px gold;
+	background-color: black;
 }
+
 
 div#middle  img#Front {
 	position: absolute;
 	left: 160px;
 	top: 640px;
+	margin: 0.5em;
+	padding: 1.5em;
+	border: thin gold solid;
+	box-shadow: 0px 0px 30px gold;
+	padding-top: 60px;
+	background-color: black;
 }
 
-div#middle nav {
-	display: block;
+div#middle figcaption h1 {
+	float: left;
 	position: absolute;
-    font-size: 20pt;
-	color: black;
-	top: 640px;
-	left: 800px;
+	left: 212px;
+	top: 660px;
+	width: 30%;
+	text-align: center;
+	font-size: 13.8pt;
+	text-indent: 0;
+	color: white;
+  }
+
+div#middle figure#leg-den figcaption.Foto-Legenda {
+	opacity: 0;
+	position: absolute;
+	background-color: rgba(32, 31, 31, 0.876);
+	color: azure;
+	width: 450px;
+	height: 261px;
+	left: 193px;
+	top: 709px;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
 }
+
+div#middle figure#leg-den figcaption.Foto-Legenda h3 {
+	text-indent: 20px;
+}
+
+div#middle figure#leg-den figcaption.Foto-Legenda div#duvidas h4#sub {
+	padding-top: 5px;
+	margin-left: 120px;
+	color: gold;
+}
+
+div#middle figure#leg-den figcaption.Foto-Legenda div#duvidas h4#sub a {
+	color: lightseagreen;
+}
+
+div#middle figure#leg-den figcaption.Foto-Legenda div#duvidas h4#sub a:hover {
+	text-decoration: underline;
+	
+}
+
+div#middle figure#leg-den:hover figcaption.Foto-Legenda {
+	opacity: 1;
+}
+
