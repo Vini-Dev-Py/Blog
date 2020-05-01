@@ -37,7 +37,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: rgb(207, 202, 202);
+	background-color: rgba(47, 44, 44, 0.938);
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -137,7 +137,6 @@ div#start nav#explicação img#tecnologias {
 	position: absolute;
 	left: 770px;
 	top: 170px;
-	border: thin gold solid;
   	margin: 0.5em;
 	padding: 1.5em;
 	padding-bottom: 100px;
@@ -151,7 +150,7 @@ div#start nav#explicação figure.tech figcaption.texto hgroup {
 	color: azure;
 	width: 380px;
 	height: 330px;
-	left: 803px;
+	left: 802px;
 	top: 202px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -179,7 +178,6 @@ div#middle  img#Front {
 	top: 640px;
 	margin: 0.5em;
 	padding: 1.5em;
-	border: thin gold solid;
 	box-shadow: 0px 0px 30px gold;
 	padding-top: 60px;
 	background-color: black;
@@ -204,8 +202,8 @@ div#middle figure#leg-den figcaption.Foto-Legenda {
 	color: azure;
 	width: 450px;
 	height: 261px;
-	left: 193px;
-	top: 709px;
+	left: 192px;
+	top: 708px;
 	padding: 10px;
 	box-sizing: border-box;
 	transition: opacity 1s;
