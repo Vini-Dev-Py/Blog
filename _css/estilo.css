@@ -37,7 +37,7 @@
 
 body {
 	font-family: Arial, sans-serif;
-	background-color: rgba(47, 44, 44, 0.938);
+	background-color: lightgrey;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -113,7 +113,6 @@ div#start nav#explicação hgroup#top {
 	color: ivory;
 	font-size: 19pt;
 	padding: 25px;
-	box-shadow: 0px 0px 30px gold;
 }
 
 div#start nav#explicação figcaption.texto-sub hgroup#sub {
@@ -140,7 +139,6 @@ div#start nav#explicação img#tecnologias {
   	margin: 0.5em;
 	padding: 1.5em;
 	padding-bottom: 100px;
-	box-shadow: 0px 0px 30px gold;
 	background-color: black;
 }
 div#start nav#explicação figure.tech figcaption.texto hgroup {
@@ -178,7 +176,6 @@ div#middle  img#Front {
 	top: 640px;
 	margin: 0.5em;
 	padding: 1.5em;
-	box-shadow: 0px 0px 30px gold;
 	padding-top: 60px;
 	background-color: black;
 }
@@ -233,3 +230,33 @@ div#middle figure#leg-den:hover figcaption.Foto-Legenda {
 	opacity: 1;
 }
 
+div#imgs figure.web3 img#web3 {
+	position: absolute;
+	left: 772px;
+	top: 700px;
+}
+
+div#imgs figure.web img#web-dev {
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 1160px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+}
+
+footer#rodape a {
+	color: blue;
+	text-decoration: none;
+}
+
+footer#rodape a:hover {
+	color: goldenrod;
+}
