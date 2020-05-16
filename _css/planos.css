@@ -1,0 +1,62 @@
+div.Bem-Vindos {
+	position: absolute;
+	top: 90px;
+	left: -5px;
+	color: black;
+	text-decoration: underline;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 1366px;
+	font-size: 20px;
+}
+
+.icon-map2::after {
+    content: " \e94b";
+    font-size: 40px;
+	
+  }
+
+div#plano-1 {
+    display: block;
+	position: absolute;
+	top: 190px;
+    left: 40px;
+    width: 290px;
+	height: 290px;
+	background-color: black;
+	color: ivory;
+	font-size: 19pt;
+	padding: 25px;
+}
+
+div#plano-1 div.txt {
+	font-size: medium;
+}
+
+div#plano-2 {
+    display: block;
+	position: absolute;
+	top: 190px;
+    left: 500px;
+    width: 290px;
+	height: 290px;
+	background-color: black;
+	color: ivory;
+	font-size: 19pt;
+	padding: 25px;
+}
+
+div#plano-3 {
+    display: block;
+	position: absolute;
+	top: 190px;
+    left: 985px;
+    width: 290px;
+	height: 290px;
+	background-color: black;
+	color: ivory;
+	font-size: 19pt;
+	padding: 25px;
+}
+

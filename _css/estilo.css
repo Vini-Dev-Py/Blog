@@ -1,40 +1,4 @@
 @charset "UTF-8";
-
-/** ICONS **/
-@font-face {
-	font-family: 'NomeDaFonte';
-	src: url('NomeDaFonte.eot');
-	src: url('NomeDaFonte?#iefix') format('embedded-opentype'),
-	  url('NomeDaFonte.svg#Locaweb-Icons') format('svg'),
-	  url('NomeDaFonte.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-  }
-  
-  [class^="ico-"]:before {
-	content: " ";
-	width:10px; height:10px;
-	display:inline-block;
-	vertical-align:middle;
-	font-family: icomoon;
-  }
-  
-/* Cola */
-.icon-home:before { content: '\2302'; } /* '⌂' */
-.icon-export:before { content: '\e715'; } /* '' */
-.icon-folder-open:before { content: '📂'; } /* '\1f4c2' */
-.icon-search:before { content: '🔍'; } /* '\1f50d' */
-.icon-link:before { content: '🔗'; } /* '\1f517' */
-/* fim da cola */
-
-[class^="ico-"]:before {
-	content: " ";
-	width:10px; height:10px;
-	display:inline-block;
-	vertical-align:middle;
-  }
-
-
 body {
 	font-family: Arial, sans-serif;
 	background-color: lightgrey;
@@ -73,21 +37,6 @@ div#Lista nav#menu li a {
 	color: white;
 	text-decoration: none;
 }
-
-/*Inicio dos testes*/
-
-.div#Lista nav#menu li.home::before
-{font-family: 'icomoon'; color: #fff; font-size: 60px; text-align: center; display: block;}
-
-div#Lista nav#menu li.home::before {
-	content: "\1f4c2";
-}
-
-div#Lista nav#menu li.home, div#Lista nav#menu li.planos, div#Lista nav#menu li.galeria,div#Lista nav#menu li.certificados,div#Lista nav#menu li.suporte
-{cursor:pointer; border-right:1px solid #fff;}
-
-
-/*Fim dos testes*/
 
 div#Lista nav#menu li a:hover {
 	color: goldenrod;
